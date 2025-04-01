@@ -1,0 +1,21 @@
+AllCops:
+  TargetRubyVersion: 3.4
+
+Style/StringLiterals:
+  EnforcedStyle: single_quotes
+
+Style/StringLiteralsInInterpolation:
+  EnforcedStyle: double_quotes
+
+Style/Documentation:
+  DisabledBydefault: true
+
+Metrics/AbcSize:
+  DisabledBydefault: true
+
+Metrics/MethodLength:
+  DisabledBydefault: true
+
+Metrics/BlockLength:
+  DisabledBydefault: true
+

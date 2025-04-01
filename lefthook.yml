@@ -1,0 +1,14 @@
+pre-push:
+  jobs:
+    - name: gems audit
+      tags:
+        - backend
+        - security
+      run: bundle audit
+
+pre-commit:
+  parallel: true
+  jobs:
+    - name: rubocop
+      glob: "*.rb"
+      run: bundle exec rubocop -A --force-exclusion {staged_files} --parallel
